@@ -1,0 +1,8 @@
+<p>home works!</p>
+<div>count: {{count}}</div>
+<input type="text" [(ngModel)]="name" (ngModelChange)="name$.next($event)" placeholder="work with ngModel">
+<div style="max-height: 200px; overflow: auto;">
+  <p *ngFor="let item of logs">
+    name change: {{item}}
+  </p>
+</div>
